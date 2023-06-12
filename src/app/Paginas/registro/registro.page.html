@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+    type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+
+
+
+  <ion-item>
+    <ion-label position="floating"> <ion-icon name="at-circle-sharp"></ion-icon> Email</ion-label>
+    <ion-input [(ngModel)]="datos.correo" placeholder="Email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> <ion-icon name="finger-print-sharp"></ion-icon> Password</ion-label>
+    <ion-input [(ngModel)]="datos.password" type="password" placeholder="Password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"> <ion-icon name="finger-print-sharp"></ion-icon> Nombre</ion-label>
+    <ion-input [(ngModel)]="datos.nombre" type="text" placeholder="Nombre"></ion-input>
+  </ion-item>
+  <p>Al hacer clic en Registrarse <a href="#">acepta nuestros términos y condiciones</a>.</p>
+  <button type="submit" (click)="registrar()" class="button"> Registrarse</button>
+  <button routerLink="/login" class="button2">Regresar</button>
+
+
+
+</ion-content>

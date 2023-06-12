@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>NuevoMensaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item disabled="true">
+    <ion-label>Fecha Actual</ion-label>
+
+    <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+    <ion-modal [keepContentsMounted]="true">
+      <ng-template>
+        <ion-datetime id="datetime"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+  </ion-item>
+  <ion-item>
+    <ion-label>Texto</ion-label>
+    <ion-input [(ngModel)]="datos.texto" ></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="guaradarMensaje()" >Enviar</ion-button>
+  <ion-button expand="full" (click)="regresar()" >Regresar</ion-button>
+
+</ion-content>

@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+body,
+html {
+  height: 100%;
+}
+body {
+  font-family: "Open Sans";
+  font-weight: 100;
+  display: flex;
+  overflow: hidden;
+}
+
+.login-form {
+  min-height: 10rem;
+  margin: auto;
+  max-width: 90%;
+  padding: 0.5rem;
+}
+
+.login-text {
+  color: #3a57af;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  max-width: 50%;
+  padding: 0.5rem;
+  text-align: center;
+  .fa-stack-1x {
+    color: rgb(255, 255, 255);
+  }
+}
+
+
+.login-forgot-pass {
+  bottom: 0;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: block;
+  font-size: 75%;
+  left: 0;
+  opacity: 0.6;
+  padding: 0.5rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.login-submit {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  text-decoration: none;
+  width: 150px;
+  margin: 1rem auto;
+  height: 27px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #3a57af;
+  -webkit-box-shadow: 0 3px rgba(58, 87, 175, 0.75);
+  -moz-box-shadow: 0 3px rgba(58, 87, 175, 0.75);
+  box-shadow: 0 3px rgba(58, 87, 175, 0.75);
+  transition: all 0.1s linear 0s;
+  // top: 0px;
+  position: relative;
+}
+
+.login-submit:hover {
+  top: 3px;
+  background-color: #2e458b;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.login-submit2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  text-decoration: none;
+  width: 150px;
+  margin: 1rem auto;
+  height: 27px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #af3a3a;
+  -webkit-box-shadow: 0 3px rgba(175, 58, 58, 0.75);
+  -moz-box-shadow: 0 3px rgba(175, 58, 58, 0.75);
+  box-shadow: 0 3px rgba(175, 58, 58, 0.75);
+  transition: all 0.1s linear 0s;
+  // top: 0px;
+  position: relative;
+}
+
+.login-submit2:hover {
+  top: 3px;
+  background-color: #8b2e2e;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type="text"],
+input[type="password"]{
+  width: 270px;
+  height: 39px;
+  // -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+  // -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px;
+  // border-radius: 0px 4px 4px 0px/5px 5px 4px 4px;
+  background-color: #fff;
+  // -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  // -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  border: solid 1px #cbc9c9;
+  margin-left: 0px;
+  margin-top: 13px;
+  // padding-left: 10px;
+}
+
+#icon {
+  display: inline-block;
+  width: 50px;
+  background-color: #3a57af;
+  padding: 8px 0px 8px 15px;
+  margin-left: 15px;
+  -webkit-border-radius: 4px 0px 0px 4px;
+  -moz-border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0px 0px 4px;
+  color: white;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09);
+  border: solid 0px #cbc9c9;
+}
+
+[class*="underlay"] {
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.underlay-photo {
+  animation: hue-rotate 6s infinite;
+  background: url("https://fondosmil.com/fondo/17536.jpg");
+  background-size: cover;
+  -webkit-filter: grayscale(30%);
+  z-index: -1;
+}
+.underlay-black {
+  background: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: grayscale(30%) hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: grayscale(30%) hue-rotate(360deg);
+  }
+}

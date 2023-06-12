@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>InicioMensaje</ion-title>
+    <ion-item horizontal="end">
+      <h5>{{IdUser}}</h5>
+
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let m of mensajes">
+    <ion-card-header>
+      <ion-card-title>{{m.texto}}</ion-card-title>
+      <ion-card-subtitle>{{m.usuario}}</ion-card-subtitle>
+      <ion-card-subtitle>{{m.fechaActual}}</ion-card-subtitle>
+    </ion-card-header>
+
+
+  </ion-card>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button routerLink="/nuevo-mensaje">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="salir()">
+        <ion-icon name="exit-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
